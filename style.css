@@ -84,14 +84,16 @@ body {
 
 .intro-section,
 section > h1,
-section > h2 {
+section > h2,
+article > h2 {
 	padding: 0 1rem;
 	color: var(--color-gray-dark-1);
 }
 
 .intro-section .title,
 section > h1,
-section > h2 {
+section > h2,
+article > h2 {
 	font-size: 1rem;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -108,7 +110,8 @@ section > h2 {
 	position: relative;
 	transition: all 0.3s;
 }
-.info-section i {
+.info-section i,
+.contact > li > i {
 	color: var(--profile-theme);
 	width: 20px;
 	height: 20px;
@@ -425,5 +428,3 @@ footer {
 footer > div {
 	width: 25px;
 }
-
-
