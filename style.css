@@ -427,5 +427,7 @@ footer {
 
 footer > div {
 	width: 25px;
+	list-style-type: none;
 }
+
 
