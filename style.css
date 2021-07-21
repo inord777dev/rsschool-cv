@@ -18,9 +18,7 @@
 
 html {
 	font-size: 100%;
-    font-family: 'PT Sans', sans-serif;
-
-
+    font-family: 'Arial', sans-serif;
 }
 
 * {
@@ -84,16 +82,22 @@ body {
 	margin: 0;
 }
 
-.intro-section {
+.intro-section,
+section > h1,
+section > h2 {
 	padding: 0 1rem;
 	color: var(--color-gray-dark-1);
 }
-.intro-section .title {
+
+.intro-section .title,
+section > h1,
+section > h2 {
 	font-size: 1rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
+
 .about .paragraph {
 	text-align: justify;
 }
@@ -410,6 +414,16 @@ body {
 	}
 } 
 
-#rsscool-img {
-    height: 50px;
+footer {
+	padding: 20px 0;
+	display: flex;
+	margin: 0 auto;
+	max-width: 60rem;
+	justify-content: space-between;
 }
+
+footer > div {
+	width: 25px;
+}
+
+
