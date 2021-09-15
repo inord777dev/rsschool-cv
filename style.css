@@ -111,7 +111,8 @@ article > h2 {
 	transition: all 0.3s;
 }
 .info-section i,
-.contact > li > i {
+.contact > li > i,
+.skills > li > i {
 	color: var(--profile-theme);
 	width: 20px;
 	height: 20px;
@@ -201,51 +202,19 @@ article > h2 {
 }
 
 /* time line block in education section */
-.timeline-block {
-	position: relative;
-	padding-left: 30px;
+.detail-description {
+    padding: 10px;
+    display: flex;
+	align-items: center;
+    font-size: 15px;
+    border-top: solid grey 1px;
 }
-.timeline-block:not(:last-of-type) {
-	margin-bottom: 1rem;	
+.detail-description__item1 {
+    width: 35%;
 }
-.timeline-block h1 {
-	font-size: 1rem;
-	margin: 5px 0;
-	transition: all 0.3s;
-}
-.timeline-block p {
-	font-size: 0.8rem;
-	margin: 5px 0;
-}
-.timeline-block time {
-	font-size: 0.8rem;
-	color: var(--color-gray-dark-2);
-}
-.timeline-block::before {
-	position: absolute;
-	content: '';
-	width: 15px;
-	height: 15px;
-	background-color: white;
-	border: 3px solid var(--timeline-circle-theme);
-	border-radius: 50%;
-	left: -10px;
-	top: -5px;
-}
-.timeline-block::after {
-	position: absolute;
-	content: '';
-	width: 3px;
-	height: 100%;
-	background-color: var(--timeline-circle-theme);
-	left: -1px;
-	top: 13px;
-}
-.timeline-block:hover h1 {
-	color: var(--color-tiffany);
-}
-.timeline-block:hover::before {
-	animation: circle 1.2s infinite;
+.detail-description__item2 {
+    padding-left: 10px;
+    width: 75%;
 }
 
 /* Programming skills section */
@@ -411,6 +380,7 @@ article > h2 {
 		flex: 0 0 33.3333%;
 	}
 }
+
 @media (max-width: 500px) {
 	html {
 		font-size: 70%;
@@ -431,6 +401,11 @@ footer > div {
 
 ul li {
 	list-style-type: none;
+}
+
+.detail-video {
+	display: flex;
+	justify-content: center;
 }
 
 
