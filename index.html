@@ -16,10 +16,22 @@
 
 <body>
   <main>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#code">Code</a>
+        <a href="#video">Video</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
     <div class="wrapper">
       <div class="intro">
         <section>
-          <h1 class="title"><mark>Andrei Korozeev</mark></h1>
+          <h1 class="title" id="home"><mark>Andrei Korozeev</mark></h1>
           <div class="profile">
             <div class="photo">
               <img alt="Andrei Korozeev" src="avatar.png">
@@ -149,7 +161,7 @@
       </div>
       <div class="detail">
         <article>
-          <div class="detail-section edu">
+          <div class="detail-section edu" id="education">
             <div class="detail-title">
               <h3>Education</h3>
             </div>
@@ -183,7 +195,7 @@
         </article>
 
         <article>
-          <div class="detail-section exp">
+          <div class="detail-section exp" id="experience">
             <div class="detail-title">
               <h3>Experience</h3>
             </div>
@@ -226,7 +238,7 @@
           </div>
         </article>
         <article>
-          <div class="detail-section exp">
+          <div class="detail-section exp" id="code">
             <div class="detail-title">
               <h3>Code examples</h3>
             </div>
@@ -242,14 +254,15 @@
           </div>
         </article>
         <article>
-          <div class="detail-section exp">
+          <div class="detail-section exp" id="video">
             <div class="detail-title">
               <h3>Video</h3>
             </div>
             <div class="detail-content">
               <div class="detail-description">
                 <div>
-                  <iframe class="embedded-video" src="https://www.youtube.com/embed/LdsTydS4eww" title="YouTube video player"
+                  <iframe class="embedded-video" src="https://www.youtube.com/embed/LdsTydS4eww"
+                    title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                   </iframe>
@@ -273,6 +286,16 @@
       <span>2021</span>
     </div>
   </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </body>
 
 </html>
