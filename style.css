@@ -440,9 +440,8 @@ h3 {
 }
 
 .project-description {
-  text-align: center;
   color: var(--color-gray-dark-0);
-  font-weight: 700;
+  text-transform: uppercase;
   font-size: 20px;
   margin-bottom: 10px;
 }
